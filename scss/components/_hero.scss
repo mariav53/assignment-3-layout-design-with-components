@@ -1,0 +1,64 @@
+header{
+	height:auto;
+	position: relative;
+}
+
+.hero {
+  height: 568px;
+	background: url('../images/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-position: center;
+	@media all and (min-width:768px) {
+    min-height: 100vh;
+		background-size:cover;
+		background-position: center top;
+  }
+}
+
+.hero_container{
+	min-width: 290px;
+	height: auto;
+	margin: 0 15px;
+	padding-top:284px;
+	@media all and (min-width:768px) {
+    min-width: 690px;
+		margin: 0 39px;
+  }
+	@media all and (min-width:1280px) {
+		min-width: 730px;
+		margin: 0 275px;
+		padding-top:284px;
+	}
+}
+.hero_title{
+ 	font-size: 42px;
+	line-height: 55px;
+	color:$colorWhite;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+ 	text-align: center;
+ 	width: 100%;
+ 	margin:0 auto;
+	@media all and (min-width:768px) {
+		font-size: 80px;
+		line-height: 106px;
+  }
+	@media all and (min-width:1280px) {
+		font-size: 100px;
+		line-height: 122px;
+	}
+}
+ .hero_text{
+	 margin-top:10px;
+ 	font-size: 16px;
+ 	color:$colorWhite;
+ 	text-align: center;
+ 	width: 100%;
+ 	margin:0 auto;
+	@media all and (min-width:768px) {
+		font-size: 24px;
+	}
+	@media all and (min-width:1280px) {
+		font-size: 24px;
+	}
+ }

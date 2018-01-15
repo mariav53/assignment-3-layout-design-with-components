@@ -1,0 +1,129 @@
+/*general button*/
+.btn{
+	width: 76px;
+	height: 45px;
+	font-size: 20px;
+	line-height: 45px;
+	text-align: center;
+	transition: background 0.3s ease;
+	@media all and (min-width:768px) {
+		width: 91px;
+  }
+	@media all and (min-width:1280px) {
+		width: 150px;
+	}
+}
+
+/*scroll button*/
+.button_scroll{
+	position: absolute;
+	left: 0;
+	bottom: 53px;
+	right: 0;
+	width: 45px;
+	height:45px;
+	background: $colorWhite;
+	border-radius: 50%;
+	margin:0 auto;
+	@media all and (min-width:768px) {
+		bottom: 30px;
+		&:hover{
+		border: 3px solid $colorOrange;
+		}
+  }
+	@media all and (min-width:1280px) {
+		bottom: 6px;
+	}
+}
+.arrow{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/*menu button*/
+.menu_button{
+	width: 44px;
+	height: 44px;
+	background: $colorBlue;
+	font-size:30px;
+	cursor:pointer;
+	border:none;
+}
+
+/*button go*/
+.btn--go{
+	background-color: transparent;
+	border: 2px solid $colorOrange;
+	color: $colorOrange;
+	border-radius: 22px;
+	font-weight: 500;
+}
+
+/*Reasons button*/
+.btn--reasons{
+	width: 184px;
+	height: 45px;
+	margin:0 auto;
+	position: absolute;
+  left: 0;
+	right: 0;
+	background-color: $colorOrange;
+	border: 2px solid $colorOrange;
+	color: $colorWhite;
+	border-radius: 22px;
+	font-weight: 500;
+	font-family: $font-text;
+	font-weight: 400;
+	position: absolute;
+	bottom: 60px;
+	cursor: pointer;
+	outline: none;
+	@media all and (min-width:768px) {
+		width: 210px;
+		&:hover{
+		border: 3px solid $colorOrange;
+		background-color: transparent;
+		color: $colorOrange;
+		}
+	}
+	@media all and (min-width:1280px) {
+		width: 255px;
+	}
+}
+
+/*scroll top button*/
+.button_top{
+	position: absolute;
+	left: 0;
+	bottom: 53px;
+	right: 0;
+	top: -24px;
+	z-index:1000;
+	width: 45px;
+	height:45px;
+	background: $colorWhite;
+	border-radius: 50%;
+	margin:0 auto;
+	@media all and (min-width:768px) {
+		bottom: 30px;
+		&:hover{
+		border: 3px solid $colorOrange;
+		}
+  }
+	@media all and (min-width:1280px) {
+		bottom: 6px;
+	}
+}
+.arrowTop{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index:1000;
+}

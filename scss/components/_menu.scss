@@ -1,0 +1,116 @@
+/*main page container*/
+
+.container {
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 0;
+		width: 0;
+		background: rgba(black, 0);
+		transition: background ease 1s .3s;
+	}
+}
+
+.btnMenu {
+	line-height: 56px;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	width: 44px;
+	height: 44px;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	background: $colorBlue;
+	transition: background ease 0.5s;
+	position: relative;
+	&:hover{
+		background: black;
+	}
+}
+.btnMenu img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.container--menu-visible {
+	&::after {
+		content: '';
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(black, .7);
+		z-index: 1;
+	}
+}
+.sideMenu {
+	position: fixed;
+	height: 100vh;
+	width: 250px;
+	background-color: $colorWhite;
+	left: -400px;
+	top: 0;
+	transition: left ease 0.8s;
+	.container--menu-visible & {
+		left: 0;
+		z-index: 2;
+	}
+	@media all and (min-width:768px) {
+		min-height: 100vh;
+	}
+}
+.close_button {
+	line-height: 56px;
+	padding: 0;
+	border: 0;
+	width: 56px;
+	outline: none;
+	cursor: pointer;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $colorWhite;
+	background: $colorOrange;
+	transition: background ease 0.3s;
+	position: absolute;
+	font-size: 1.3em;
+	left: 100%;
+	z-index: 2;
+}
+ul.menu {
+	color: $colorDarkBlue;
+	margin: 0;
+	padding: 56px 0 0;
+	list-style: none;
+}
+.menu_item {
+	border-bottom: 1px solid rgba($colorDarkGrey, 0.25);
+	&:first-child {
+		border-top: 1px solid rgba($colorDarkGrey, 0.25);
+	}
+}
+.menu_link {
+	font-size: 15px;
+	padding: 0 10px;
+	display: block;
+	line-height: 56px;
+	color: inherit;
+	text-decoration: none;
+	transition: background ease 0.9s, color ease 0.3s;
+	&:hover {
+		color: $colorDarkBlue;
+		background: rgba($colorLightGrey, 0.5);
+	}
+	@media all and (min-width:768px) {
+		font-size: 17px;
+	}
+}
