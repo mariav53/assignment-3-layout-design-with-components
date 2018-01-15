@@ -26,3 +26,4 @@ Cada vez que se pulsa el botón de "More reasons" se deberán pedir 3 nuevas raz
 
 ## 4. BONUS
 - Efecto hover en botones 'Scroll', 'Go to top' y 'More reasons'.
+- Petición al servidor mediante `fetch` 
